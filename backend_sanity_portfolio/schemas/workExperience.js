@@ -16,6 +16,11 @@ export default {
                 name:'desc',
                 title:'Desc',
                 type:'string'
+            },
+            {
+                name:'details',
+                title:'Details',
+                type:'string'
             }
     ]
 }

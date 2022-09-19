@@ -9,6 +9,7 @@ import './Skills.scss';
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
+  const workDetails = 'During this Internship, I was involved in creating a Full Stack Web Based Invoice Management Application, there by developing a deep understanding of all aspects of product development such as identifying appropriate user requirement, designing a great user experience and building appropriate data model and machine learning model along with relevant UI components and backend design.';
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
@@ -68,6 +69,7 @@ const Skills = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
+                      <p className="p-text">{workDetails}</p>
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
